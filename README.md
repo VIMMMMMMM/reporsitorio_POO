@@ -8,4 +8,4 @@ As regras para criação dessa prática são:
 2 - a classe Aluno deve ter os seguinte atributos: id, matricula, nome
 3 - a classe BaseDeDados terá dois métodos: obterAlunos (public) cujo atributo do parâmetro é um valor que representa a quantidade de alunos e imprimir vetor de alunos (private)
 Por fim, criar uma terceira classe de nome Executor deverá fazer a impressão de todos os alunos inseridos no vetor. Para isso precisa executar o método obterAlunos passando o valor 20 como parâmetro.
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
