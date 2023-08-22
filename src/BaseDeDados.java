@@ -16,9 +16,9 @@ public class BaseDeDados {
         return vetor;
     }
     private void imprimir (aluno[]vetor){
-for (int i = 0;i<vetor.length;i++){
-    System.out.println(vetor[i].getNome()+" id: "+ vetor[i].getId()+" matricula: "+vetor[i].getMatricula());
-}
+        for (aluno aluno : vetor) {
+            System.out.println(aluno.getNome() + " id: " + aluno.getId() + " matricula: " + aluno.getMatricula());
+        }
 
 
 
