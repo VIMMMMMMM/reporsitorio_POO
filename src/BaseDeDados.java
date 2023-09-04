@@ -15,13 +15,22 @@ public class BaseDeDados {
         imprimir(vetor);
         return vetor;
     }
+    public Professor obterProfessor(Scanner sc){
+        Professor professor = new Professor();
+        professor.setId(sc.nextLong());
+        professor.setNome(sc.next());
+        imprimirp(professor);
+        return professor;
+    }
+    private void imprimirp(Professor professor){
+        System.out.println("Professor: "+professor.getNome()+"; Id: "+professor.getId());
+    }
     private void imprimir (aluno[]vetor){
         for (aluno aluno : vetor) {
-            System.out.println(aluno.getNome() + " id: " + aluno.getId() + " matricula: " + aluno.getMatricula());
+            System.out.println(aluno.getNome() + "; id: " + aluno.getId() + "; matricula: " + aluno.getMatricula());
         }
-
-
-
     }
+
+
 
 }

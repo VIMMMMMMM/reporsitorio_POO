@@ -1,9 +1,5 @@
-public class aluno {
-    private long id;
+public class aluno extends Pessoa{
     private Integer matricula;
-    private String nome;
-
-
     public long getMatricula() {
         return matricula;
     }
@@ -12,20 +8,6 @@ public class aluno {
         this.matricula = matricula;
     }
 
-    public String getNome() {
-        return nome;
-    }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
 }
 

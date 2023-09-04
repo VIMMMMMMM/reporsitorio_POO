@@ -1,3 +1,4 @@
+import java.sql.Struct;
 import java.util.Scanner;
 
 public class Executor {
@@ -6,6 +7,8 @@ public class Executor {
         Scanner scan = new Scanner(System.in);
         BaseDeDados dados = new BaseDeDados();
         dados.obterAlunos(scan.nextInt());
+        dados.obterProfessor(scan);
 
     }
+
 }
