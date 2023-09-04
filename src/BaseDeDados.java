@@ -19,11 +19,12 @@ public class BaseDeDados {
         Professor professor = new Professor();
         professor.setId(sc.nextLong());
         professor.setNome(sc.next());
+        professor.setMateria(sc.next());
         imprimirp(professor);
         return professor;
     }
     private void imprimirp(Professor professor){
-        System.out.println("Professor: "+professor.getNome()+"; Id: "+professor.getId());
+        System.out.println("Professor: "+professor.getNome()+"; Id: "+professor.getId()+"; materia: "+professor.getMateria());
     }
     private void imprimir (aluno[]vetor){
         for (aluno aluno : vetor) {
