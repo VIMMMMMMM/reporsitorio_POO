@@ -12,6 +12,9 @@ public class reserva {
         private Date checkOut;
         private static final SimpleDateFormat dateFormat=new SimpleDateFormat("dd/MM/yyyy");
         public  reserva(Integer numeroDoQuarto, Date checkIn, Date checkOut) throws DominioExecoes {
+            Date agora = new Date();
+            if(checkIn.before(agora)||checkOut.before(agora))
+                throw new DominioExecoes(" datas de reserva devem ser futuras");
             if (!checkOut.after(checkIn))
                 throw new DominioExecoes(" check out deve ser depois de check in") ;
             this.numeroDoQuarto= numeroDoQuarto;
@@ -37,6 +40,6 @@ public class reserva {
 
     @Override
     public String toString() {
-        return "quarto: "+numeroDoQuarto+", check in: "+dateFormat.format(checkIn)+", check out: "+dateFormat.format(checkOut)+", "+duracao()+" noites";
+        return "quarto: "+numeroDoQuarto+", check in: "+dateFormat.format(checkIn)+", check out: "+dateFormat.format(checkOut)+", "+duracao()+" noite"+(duracao()>1?"s":"");
     }
 }
