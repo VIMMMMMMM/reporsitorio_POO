@@ -7,10 +7,10 @@ import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 public class reserva {
-        private Integer numeroDoQuarto;
+        private final Integer numeroDoQuarto;
         private Date checkIn;
         private Date checkOut;
-        private static SimpleDateFormat dateFormat=new SimpleDateFormat("dd/MM/yyyy");
+        private static final SimpleDateFormat dateFormat=new SimpleDateFormat("dd/MM/yyyy");
         public  reserva(Integer numeroDoQuarto, Date checkIn, Date checkOut) throws DominioExecoes {
             if (!checkOut.after(checkIn))
                 throw new DominioExecoes(" check out deve ser depois de check in") ;
@@ -19,20 +19,6 @@ public class reserva {
             this.checkOut=checkOut;
         }
 
-    public Integer getNumeroDoQuarto() {
-        return numeroDoQuarto;
-    }
-
-    public void setNumeroDoQuarto(Integer numeroDoQuarto) {
-        this.numeroDoQuarto = numeroDoQuarto;
-    }
-
-    public Date getCheckIn() {
-        return checkIn;
-    }
-    public Date getCheckOut() {
-        return checkOut;
-    }
     public long duracao(){
             long diferenca = checkOut.getTime()-checkIn.getTime();
         return TimeUnit.DAYS.convert(diferenca, TimeUnit.MILLISECONDS);

@@ -12,23 +12,18 @@ public class execoes {
         metodo2();
     }
     public static void metodo2(){
-        Scanner scanner = new Scanner(System.in);
-        try{
+        try (Scanner scanner = new Scanner(System.in)) {
             String[] vetor = scanner.nextLine().split(" ");
             int posicao = scanner.nextInt();
             System.out.println(vetor[posicao]);
 
-        }
-        catch (ArrayIndexOutOfBoundsException a){
+        } catch (ArrayIndexOutOfBoundsException a) {
             System.out.println("posicao invalida");
             a.printStackTrace();
-        }
-        catch (InputMismatchException i){
+        } catch (InputMismatchException i) {
             System.out.println("nao e um numero");
             i.printStackTrace();
-        }
-        finally {
-                scanner.close();
+        } finally {
             System.out.println("finally funcionou");
         }
     }
