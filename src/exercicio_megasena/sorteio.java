@@ -6,7 +6,7 @@ public class sorteio {
   public TreeSet<Integer> logicaSorteio(){
         Random aleatorios= new Random();
         int numeros;
-        TreeSet <Integer> ts =new TreeSet<Integer>();
+        TreeSet <Integer> ts =new TreeSet<>();
         for(int i=0;i<6;i++){
             numeros = aleatorios.nextInt(60);
             ts.add(numeros);
