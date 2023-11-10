@@ -1,4 +1,5 @@
-import java.sql.Struct;
+package prova1;
+
 import java.util.Scanner;
 
 public class Executor {

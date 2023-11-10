@@ -1,3 +1,7 @@
+package prova1;
+
+import prova1.Pessoa;
+
 public class Professor  extends Pessoa {
 private String materia;
 

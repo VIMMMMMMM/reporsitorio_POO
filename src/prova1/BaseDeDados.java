@@ -1,3 +1,7 @@
+package prova1;
+
+import prova1.aluno;
+
 import java.util.Scanner;
 public class BaseDeDados {
     public aluno[] obterAlunos(int quantidade){
@@ -24,7 +28,7 @@ public class BaseDeDados {
         return professor;
     }
     private void imprimirp(Professor professor){
-        System.out.println("Professor: "+professor.getNome()+"; Id: "+professor.getId()+"; materia: "+professor.getMateria());
+        System.out.println("prova1.Professor: "+professor.getNome()+"; Id: "+professor.getId()+"; materia: "+professor.getMateria());
     }
     private void imprimir (aluno[]vetor){
         for (aluno aluno : vetor) {
