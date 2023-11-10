@@ -15,6 +15,6 @@ public void setCurso(String curso) {
 
 
 public String toString() {
-	return "Professor [curso=" + curso +" id="+getId()+" nome="+getNome()+ "]\n";
+	return "prova1.Professor [curso=" + curso +" id="+getId()+" nome="+getNome()+ "]\n";
 }
 }
