@@ -26,6 +26,7 @@ public class reserva {
             long diferenca = checkOut.getTime()-checkIn.getTime();
         return TimeUnit.DAYS.convert(diferenca, TimeUnit.MILLISECONDS);
 
+
     }
     public void  atualizacaoDeDatas(Date checkIn, Date checkOut) throws DominioExecoes {
             Date agora = new Date();
