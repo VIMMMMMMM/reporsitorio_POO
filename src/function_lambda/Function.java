@@ -1,4 +1,10 @@
 package function_lambda;
 
-public class Function {
+import java.util.List;
+
+public class Function implements java.util.function.Function<Produto, String> {
+    @Override
+    public String apply(Produto produto) {
+        return null;
+    }
 }
