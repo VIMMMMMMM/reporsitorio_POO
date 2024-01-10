@@ -2,9 +2,8 @@ package function_lambda;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
-public class Executor_Lambida {
+public class Executor_Lambda {
     public static void main(String[] args) {
         List<Produto> list = new ArrayList<>();
         list.add(new Produto("Tv",900.00));
