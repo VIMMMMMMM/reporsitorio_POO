@@ -10,7 +10,10 @@ public class Executor_Lambda {
         list.add(new Produto("Mouse",50.00));
         list.add(new Produto("Tablet",350.50));
         list.add(new Produto("Hd Case",80.90));
+
+
         System.out.println(list);
+
         System.out.println("funcao de funcao");
         ClassesTeste classesTeste = new ClassesTeste();
         double soma = classesTeste.somaLista(list, p -> p.getNome().charAt(0) == 'T');

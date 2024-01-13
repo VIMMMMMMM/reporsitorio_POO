@@ -1,10 +1,17 @@
 package function_lambda;
 
-public class Produto {
+public class ProdutoExercicio {
     private String nome;
     private Double preco;
+    private String gmail;
 
+    public String getGmail() {
+        return gmail;
+    }
 
+    public void setGmail(String gmail) {
+        this.gmail = gmail;
+    }
 
     public String getNome() {
         return nome;
@@ -22,8 +29,9 @@ public class Produto {
         this.preco = preco;
     }
 
-    public Produto(String nome,Double preco) {
+    public ProdutoExercicio(String nome, String gmail ,Double preco) {
         this.nome = nome;
+        this.gmail=gmail;
         this.preco = preco;
     }
 
@@ -31,6 +39,7 @@ public class Produto {
     public String toString() {
         return "Produto{" +
                 "nome='" + nome + '\'' +
-               String.format("%.2f",preco);
+                "gmail= " + gmail +
+                String.format("%.2f",preco);
     }
 }
